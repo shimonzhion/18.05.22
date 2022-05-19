@@ -101,3 +101,17 @@ for (var j=1;j<p1;j++){
 // }
 // console.log(mystring("12,3,455"))
 
+function numbers(num, st) {
+    var array = []
+    
+    for (var i = 0; i < st.length; i++) {
+        if (st[i] != num) {
+            array+=st[i]
+        }
+    }
+    if (array[i] > num || array[i] < num) {
+      array+=num
+    }
+    return array
+}
+console.log(numbers(1, [4, 34, 5, 4, 8, 2, 8, 3]))
